@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import './loading.css';
+import './btn-loading.css';
 
 export default function LoadingButton ({color, elevate, onPress, text, corner, style, icon, iconPosition, loading}) {
 
