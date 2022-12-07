@@ -1,28 +1,28 @@
-.btn-loading {
+.button-loader {
   display: inline-block;
   position: relative;
   width: 40px;
   height: 16px;
 }
-.btn-loading div {
+.button-loader div {
   display: inline-block;
   position: absolute;
   width: 4px;
-  animation: btn-loading 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  animation: button-loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
-.btn-loading div:nth-child(1) {
+.button-loader div:nth-child(1) {
   left: 8px;
   animation-delay: -0.24s;
 }
-.btn-loading div:nth-child(2) {
+.button-loader div:nth-child(2) {
   left: 16px;
   animation-delay: -0.12s;
 }
-.btn-loading div:nth-child(3) {
+.button-loader div:nth-child(3) {
   left: 24px;
   animation-delay: 0;
 }
-@keyframes btn-loading {
+@keyframes button-loader {
   0% {
     top: -2px;
     height: 24px;

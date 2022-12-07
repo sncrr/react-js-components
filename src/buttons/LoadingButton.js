@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import './btn-loading.css';
+import './button-loader.css';
 
 export default function LoadingButton ({color, elevate, onPress, text, corner, style, icon, iconPosition, loading}) {
 
@@ -28,7 +28,7 @@ export default function LoadingButton ({color, elevate, onPress, text, corner, s
         className={getClassName() + " opacity-50 " + style}
         disabled
       >
-        <div className="btn-loading">
+        <div className="button-loader">
           <div className="bg-info"></div>
           <div className="bg-info"></div>
           <div className="bg-info"></div>
