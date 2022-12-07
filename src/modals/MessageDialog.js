@@ -11,6 +11,7 @@ export default function MessageDialog ({close}) {
           <button
             className="bg-info active:bg-info-dark text-white rounded-full shadow-md px-8 py-2 mx-2"
             onClick={close}
+            autoFocus
           >
             OK
           </button>
