@@ -18,6 +18,13 @@ module.exports = {
         'danger-dark': '#CC0000',
         'cancel': '#6c757d',
         'cancel-dark': '#343a40',
+        'modal': '#343a4080',
+      },
+      maxWidth: {
+        'modal': '40rem',
+        'modal-sm': '20rem',
+        'modal-md': '40rem',
+        'modal-lg': '60rem'
       }
     },
   },
