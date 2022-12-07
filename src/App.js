@@ -1,4 +1,4 @@
-import { confirm, inform, load } from "./modals/Modal";
+import { closeDialog, promptDialog } from "./modals/PromptDialog";
 
 function App() {
   return (
@@ -9,24 +9,59 @@ function App() {
 
       <div>
         <button
+          className="m-2 text-white bg-info outline-none p-2"
           onClick={() => {
-            inform("Hello World");
+            promptDialog({
+              title: "Message",
+              message: "Hello World"
+            })
           }}
         >
           Message
         </button>
 
         <button
+          className="m-2 text-white bg-info outline-none p-2"
           onClick={() => {
-            confirm("Hello World");
+            promptDialog({
+              title: "Confirmation",
+              message: "Are you sure?",
+              buttons: [
+                {
+                  label: "Info",
+                  color: "info",
+                  closeDialog: false,
+                  onClick: () => {}
+                },
+                {
+                  label: "Close",
+                  color: "default",
+                  closeDialog: true,
+                  onClick: () => {}
+                }
+              ]
+            })
+
+            
           }}
         >
           Confirm
         </button>
 
         <button
+          className="m-2 text-white bg-info outline-none p-2"
           onClick={() => {
-            load("Hello World");
+            let dialog = promptDialog({
+              // title: "Message",
+              // message: "Hello World",
+              isLoading: true,
+              hideButtons: true,
+            })
+
+            setTimeout(() => {
+              console.log("close");
+              closeDialog(dialog);
+            }, 2000)
           }}
         >
           Load

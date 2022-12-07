@@ -21,10 +21,16 @@ module.exports = {
         'modal': '#343a4080',
       },
       maxWidth: {
-        'modal': '40rem',
+        'modal': '60rem',
         'modal-sm': '20rem',
         'modal-md': '40rem',
         'modal-lg': '60rem'
+      },
+      minWidth: {
+        'modal': '20rem',
+        'modal-sm': '10rem',
+        'modal-md': '20rem',
+        'modal-lg': '40rem'
       }
     },
   },
