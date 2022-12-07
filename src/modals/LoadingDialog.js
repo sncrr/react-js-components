@@ -1,4 +1,4 @@
-import "./css/loader.css";
+import "./css/modal-loader.css";
 
 export default function LoadingDialog ({close}) {
 
@@ -6,7 +6,7 @@ export default function LoadingDialog ({close}) {
     <div className="fixed flex top-0 left-0 right-0 z-50 w-full h-full justify-center items-center bg-modal transition-all">
       <div className="bg-white rounded-2xl shadow px-24 py-8 max-w-modal">
         <div className="text-center">
-          <div className="lds-roller">
+          <div className="modal-loading">
             <div></div>
             <div></div>
             <div></div>
